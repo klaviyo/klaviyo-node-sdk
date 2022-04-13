@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The SinceInteger model module.
  * @module model/SinceInteger
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var SinceInteger = /*#__PURE__*/function () {
   /**

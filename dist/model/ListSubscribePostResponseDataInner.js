@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSubscribePostResponseDataInner model module.
  * @module model/ListSubscribePostResponseDataInner
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var ListSubscribePostResponseDataInner = /*#__PURE__*/function () {
   /**

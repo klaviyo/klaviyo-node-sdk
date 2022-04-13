@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The PrivacyPhone model module.
  * @module model/PrivacyPhone
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var PrivacyPhone = /*#__PURE__*/function () {
   /**

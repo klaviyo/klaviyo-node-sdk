@@ -40,7 +40,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 /**
  * The ListSubscribePostResponseData model module.
  * @module model/ListSubscribePostResponseData
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var ListSubscribePostResponseData = /*#__PURE__*/function (_Array) {
   _inherits(ListSubscribePostResponseData, _Array);
@@ -81,6 +81,7 @@ var ListSubscribePostResponseData = /*#__PURE__*/function (_Array) {
   }]);
 
   return ListSubscribePostResponseData;
-}( /*#__PURE__*/_wrapNativeSuper(Array));
+}( /*#__PURE__*/_wrapNativeSuper(Array)); // Implement OneOfinlineResponse2006 interface:
+
 
 exports.ListSubscribePostResponseData = ListSubscribePostResponseData;

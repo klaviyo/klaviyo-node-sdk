@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CheckMembershipResponseInner model module.
  * @module model/CheckMembershipResponseInner
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var CheckMembershipResponseInner = /*#__PURE__*/function () {
   /**

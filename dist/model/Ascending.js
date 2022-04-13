@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The Ascending model module.
  * @module model/Ascending
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var Ascending = /*#__PURE__*/function () {
   /**

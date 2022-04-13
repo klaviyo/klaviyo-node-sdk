@@ -23,7 +23,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /**
 * @module ApiClient
-* @version 2022.03.29
+* @version 2021.11.26
 */
 
 /**

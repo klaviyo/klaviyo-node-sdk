@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The V2ListsBody model module.
  * @module model/V2ListsBody
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var V2ListsBody = /*#__PURE__*/function () {
   /**

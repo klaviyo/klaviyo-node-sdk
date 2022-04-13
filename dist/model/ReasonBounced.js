@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ReasonBounced model module.
  * @module model/ReasonBounced
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var ReasonBounced = /*#__PURE__*/function () {
   /**

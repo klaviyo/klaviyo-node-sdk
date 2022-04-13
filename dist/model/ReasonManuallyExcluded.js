@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ReasonManuallyExcluded model module.
  * @module model/ReasonManuallyExcluded
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var ReasonManuallyExcluded = /*#__PURE__*/function () {
   /**

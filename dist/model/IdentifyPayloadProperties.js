@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The IdentifyPayloadProperties model module.
  * @module model/IdentifyPayloadProperties
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var IdentifyPayloadProperties = /*#__PURE__*/function () {
   /**

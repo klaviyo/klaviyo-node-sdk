@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TemplateIdRenderBody model module.
  * @module model/TemplateIdRenderBody
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var TemplateIdRenderBody = /*#__PURE__*/function () {
   /**

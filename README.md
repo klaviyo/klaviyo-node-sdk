@@ -1,6 +1,6 @@
 # Klaviyo JavaScript SDK
 
-- SDK version: 20220330.0.0
+- SDK version: 1.0.1
 
 ## Helpful Resources
 
@@ -479,7 +479,7 @@ Templates.deleteTemplate(templateId)
 #### [Get All Templates](https://developers.klaviyo.com/en/reference/get-templates)
 
 ```JavaScript
-Templates.getTemplates(opts)
+Templates.getTemplates()
 ```
 
 
@@ -514,7 +514,7 @@ Templates.updateTemplate(templateId, opts)
 ## TrackIdentifyApi
 
 
-#### [Identify Profile (Legacy)](https://developers.klaviyo.com/en/reference/identify-get)
+#### [Identify Profile](https://developers.klaviyo.com/en/reference/identify-get)
 
 ```JavaScript
 TrackIdentify.identifyGet(data)
@@ -532,7 +532,7 @@ TrackIdentify.identifyPost(opts)
 
 
 
-#### [Track Profile Activity (Legacy)](https://developers.klaviyo.com/en/reference/track-get)
+#### [Track Profile Activity](https://developers.klaviyo.com/en/reference/track-get)
 
 ```JavaScript
 TrackIdentify.trackGet(data)

@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CheckMembershipRequest model module.
  * @module model/CheckMembershipRequest
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var CheckMembershipRequest = /*#__PURE__*/function () {
   /**
