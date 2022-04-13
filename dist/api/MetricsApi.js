@@ -22,7 +22,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Metrics service.
 * @module api/MetricsApi
-* @version 2022.03.29
+* @version 2021.11.26
 */
 var MetricsApi = /*#__PURE__*/function () {
   /**
@@ -70,7 +70,7 @@ var MetricsApi = /*#__PURE__*/function () {
     }
     /**
      * Query Event Data
-     * Exports event data from Klaviyo, optionally filtering and segmenting on available event properties. Note that the only comparison operator currently supported is &#x60;&#x3D;&#x60;. To ensure a correct response, enter parameters in the curl request as they are ordered below:
+     * Exports event data from Klaviyo, optionally filtering and segmenting on available event properties. To ensure a correct response, enter parameters in the curl request as they are ordered below:
      * @param {<&vendorExtensions.x-jsdoc-type>} metricId 
      * @param {Object} opts Optional parameters
      * @param {String} opts.startDate  Beginning of timeframe to pull event data for. The default value is 1 month ago. Can also accept a 10-digit UNIX timestamp. When sending a &#x60;start_date&#x60;, you must also send an &#x60;end_date&#x60;  Ex: &#x60;1610524800&#x60; OR &#x60;2021-01-13&#x60; 

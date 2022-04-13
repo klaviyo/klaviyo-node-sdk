@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The UnitWeek model module.
  * @module model/UnitWeek
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var UnitWeek = /*#__PURE__*/function () {
   /**

@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The MeasurementCount model module.
  * @module model/MeasurementCount
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var MeasurementCount = /*#__PURE__*/function () {
   /**

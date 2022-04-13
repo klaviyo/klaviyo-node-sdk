@@ -7,9 +7,9 @@ exports.TemplatesApi = void 0;
 
 var _ApiClient = require("../ApiClient.js");
 
-var _InlineResponse = require("../model/InlineResponse20012.js");
+var _InlineResponse = require("../model/InlineResponse20013.js");
 
-var _InlineResponse2 = require("../model/InlineResponse20013.js");
+var _InlineResponse2 = require("../model/InlineResponse20014.js");
 
 var _RenderedTemplate = require("../model/RenderedTemplate.js");
 
@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Templates service.
 * @module api/TemplatesApi
-* @version 2022.03.29
+* @version 2021.11.26
 */
 var TemplatesApi = /*#__PURE__*/function () {
   /**
@@ -109,7 +109,7 @@ var TemplatesApi = /*#__PURE__*/function () {
      * Delete Template
      * Deletes a given template.
      * @param {<&vendorExtensions.x-jsdoc-type>} templateId 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20013}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20014}
      */
 
   }, {
@@ -130,7 +130,7 @@ var TemplatesApi = /*#__PURE__*/function () {
       var authNames = ['ApiKeyAuth'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _InlineResponse2.InlineResponse20013;
+      var returnType = _InlineResponse2.InlineResponse20014;
       return _ApiClient.ApiClient.instance.callApi('/v1/email-template/{template_id}', 'DELETE', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType).then(function (response_and_data) {
         return response_and_data.data;
       });
@@ -138,28 +138,21 @@ var TemplatesApi = /*#__PURE__*/function () {
     /**
      * Get All Templates
      * Returns a list of all the email templates you&#x27;ve created. The templates are returned in sorted order by &#x60;name&#x60;.
-     * @param {Object} opts Optional parameters
-     * @param {Number} opts.page For pagination, which page of results to return. Default &#x3D; 0 (default to <.>)
-     * @param {Number} opts.count For pagination, the number of results to return. Max &#x3D; 100 (default to <.>)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20012}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20013}
      */
 
   }, {
     key: "getTemplates",
-    value: function getTemplates(opts) {
-      opts = opts || {};
+    value: function getTemplates() {
       var postBody = null;
       var pathParams = {};
-      var queryParams = {
-        'page': opts['page'],
-        'count': opts['count']
-      };
+      var queryParams = {};
       var headerParams = {};
       var formParams = {};
       var authNames = ['ApiKeyAuth'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _InlineResponse.InlineResponse20012;
+      var returnType = _InlineResponse.InlineResponse20013;
       return _ApiClient.ApiClient.instance.callApi('/v1/email-templates', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType).then(function (response_and_data) {
         return response_and_data.data;
       });
@@ -201,7 +194,7 @@ var TemplatesApi = /*#__PURE__*/function () {
     }
     /**
      * Render and Send Template
-     * Renders the specified template with the provided data and send the contents in an email via the service specified. This API is intended to test templates only, and is rate limited to the following thresholds: 100/hour, 1,000/day.
+     * Renders the specified template with the provided data and send the contents in an email via the service specified. This API is intended to test templates only, and is rate limited to the following thresholds: 100/hour, 1,000/day.  NOTE: To perform this action, your account first needs to be [verified](https://help.klaviyo.com/hc/en-us/articles/115000628331-About-Account-Verification) by Klaviyo. 
      * @param {<&vendorExtensions.x-jsdoc-type>} templateId 
      * @param {Object} opts Optional parameters
      * @param {String} opts.fromEmail 

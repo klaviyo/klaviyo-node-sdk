@@ -27,13 +27,13 @@ var _InlineResponse6 = require("../model/InlineResponse2007.js");
 
 var _InlineResponse7 = require("../model/InlineResponse2008.js");
 
+var _InlineResponse8 = require("../model/InlineResponse2009.js");
+
 var _ListIdMembersBody = require("../model/ListIdMembersBody.js");
 
 var _ListIdMembersBody2 = require("../model/ListIdMembersBody1.js");
 
 var _ListIdSubscribeBody = require("../model/ListIdSubscribeBody.js");
-
-var _ListSubscribePostResponseData = require("../model/ListSubscribePostResponseData.js");
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -44,7 +44,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * ListsSegments service.
 * @module api/ListsSegmentsApi
-* @version 2022.03.29
+* @version 2021.11.26
 */
 var ListsSegmentsApi = /*#__PURE__*/function () {
   /**
@@ -66,7 +66,7 @@ var ListsSegmentsApi = /*#__PURE__*/function () {
    * @param {<&vendorExtensions.x-jsdoc-type>} listId 
    * @param {Object} opts Optional parameters
    * @param {module:model/ListIdMembersBody} opts.body 
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/InlineResponse2006>}
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/InlineResponse2007>}
    */
 
 
@@ -89,7 +89,7 @@ var ListsSegmentsApi = /*#__PURE__*/function () {
       var authNames = ['ApiKeyAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = [_InlineResponse5.InlineResponse2006];
+      var returnType = [_InlineResponse6.InlineResponse2007];
       return _ApiClient.ApiClient.instance.callApi('/v2/list/{list_id}/members', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType).then(function (response_and_data) {
         return response_and_data.data;
       });
@@ -153,7 +153,7 @@ var ListsSegmentsApi = /*#__PURE__*/function () {
     }
     /**
      * Exclude Profile From All Email
-     * Marks a person as excluded from all email. This works the same way as manually excluding someone via the excluded people page. Someone who is excluded will no longer receive any campaigns or flow emails.
+     * Marks a person as excluded from all email. This works the same way as manually excluding someone via the excluded people page. Someone who is excluded will no longer receive any campaigns or flow emails. Keep in mind, there is currently no API to un-exclude someone. In order to remove this block, you must manually remove someone from the unsubscribed list.
      * @param {Object} opts Optional parameters
      * @param {String} opts.email 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2002}
@@ -217,7 +217,7 @@ var ListsSegmentsApi = /*#__PURE__*/function () {
      * @param {<&vendorExtensions.x-jsdoc-type>} listId 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.marker A marker value returned by a previous GET call. Use this to grab the next batch of records.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2007}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2008}
      */
 
   }, {
@@ -241,7 +241,7 @@ var ListsSegmentsApi = /*#__PURE__*/function () {
       var authNames = ['ApiKeyAuth'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _InlineResponse6.InlineResponse2007;
+      var returnType = _InlineResponse7.InlineResponse2008;
       return _ApiClient.ApiClient.instance.callApi('/v2/list/{list_id}/exclusions/all', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType).then(function (response_and_data) {
         return response_and_data.data;
       });
@@ -370,7 +370,7 @@ var ListsSegmentsApi = /*#__PURE__*/function () {
      * @param {<&vendorExtensions.x-jsdoc-type>} listOrSegmentId 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.marker A marker value returned by a previous GET call. Use this to grab the next batch of records.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2008}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2009}
      */
 
   }, {
@@ -394,7 +394,7 @@ var ListsSegmentsApi = /*#__PURE__*/function () {
       var authNames = ['ApiKeyAuth'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _InlineResponse7.InlineResponse2008;
+      var returnType = _InlineResponse8.InlineResponse2009;
       return _ApiClient.ApiClient.instance.callApi('/v2/group/{list_or_segment_id}/members/all', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType).then(function (response_and_data) {
         return response_and_data.data;
       });
@@ -471,7 +471,7 @@ var ListsSegmentsApi = /*#__PURE__*/function () {
      * @param {<&vendorExtensions.x-jsdoc-type>} listId 
      * @param {Object} opts Optional parameters
      * @param {module:model/ListIdSubscribeBody} opts.body 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListSubscribePostResponseData}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2006}
      */
 
   }, {
@@ -493,7 +493,7 @@ var ListsSegmentsApi = /*#__PURE__*/function () {
       var authNames = ['ApiKeyAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = _ListSubscribePostResponseData.ListSubscribePostResponseData;
+      var returnType = _InlineResponse5.InlineResponse2006;
       return _ApiClient.ApiClient.instance.callApi('/v2/list/{list_id}/subscribe', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType).then(function (response_and_data) {
         return response_and_data.data;
       });

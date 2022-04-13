@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * DataPrivacy service.
 * @module api/DataPrivacyApi
-* @version 2022.03.29
+* @version 2021.11.26
 */
 var DataPrivacyApi = /*#__PURE__*/function () {
   /**

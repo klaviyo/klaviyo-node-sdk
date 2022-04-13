@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The MetricTimeline model module.
  * @module model/MetricTimeline
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var MetricTimeline = /*#__PURE__*/function () {
   /**

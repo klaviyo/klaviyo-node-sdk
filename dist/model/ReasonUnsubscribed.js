@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ReasonUnsubscribed model module.
  * @module model/ReasonUnsubscribed
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var ReasonUnsubscribed = /*#__PURE__*/function () {
   /**

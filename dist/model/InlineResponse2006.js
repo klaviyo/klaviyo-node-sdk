@@ -16,14 +16,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The InlineResponse2006 model module.
  * @module model/InlineResponse2006
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var InlineResponse2006 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>InlineResponse2006</code>.
    * @alias module:model/InlineResponse2006
    * @class
-   * @extends 
    */
   function InlineResponse2006() {
     _classCallCheck(this, InlineResponse2006);
@@ -42,8 +41,6 @@ var InlineResponse2006 = /*#__PURE__*/function () {
     value: function constructFromObject(data, obj) {
       if (data) {
         obj = obj || new InlineResponse2006();
-
-        _ApiClient.ApiClient.constructFromObject(data, obj, '');
       }
 
       return obj;
@@ -51,6 +48,7 @@ var InlineResponse2006 = /*#__PURE__*/function () {
   }]);
 
   return InlineResponse2006;
-}();
+}(); // Implement OneOfinlineResponse2006 interface:
+
 
 exports.InlineResponse2006 = InlineResponse2006;

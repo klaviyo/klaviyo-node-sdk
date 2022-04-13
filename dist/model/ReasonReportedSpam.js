@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ReasonReportedSpam model module.
  * @module model/ReasonReportedSpam
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var ReasonReportedSpam = /*#__PURE__*/function () {
   /**

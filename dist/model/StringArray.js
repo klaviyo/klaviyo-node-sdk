@@ -38,7 +38,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 /**
  * The StringArray model module.
  * @module model/StringArray
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var StringArray = /*#__PURE__*/function (_Array) {
   _inherits(StringArray, _Array);

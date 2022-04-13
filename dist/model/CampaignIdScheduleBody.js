@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CampaignIdScheduleBody model module.
  * @module model/CampaignIdScheduleBody
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var CampaignIdScheduleBody = /*#__PURE__*/function () {
   /**

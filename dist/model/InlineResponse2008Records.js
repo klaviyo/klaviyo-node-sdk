@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The InlineResponse2008Records model module.
  * @module model/InlineResponse2008Records
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var InlineResponse2008Records = /*#__PURE__*/function () {
   /**
@@ -43,8 +43,9 @@ var InlineResponse2008Records = /*#__PURE__*/function () {
         obj = obj || new InlineResponse2008Records();
         if (data.hasOwnProperty('id')) obj.id = _ApiClient.ApiClient.convertToType(data['id'], 'String');
         if (data.hasOwnProperty('email')) obj.email = _ApiClient.ApiClient.convertToType(data['email'], 'String');
+        if (data.hasOwnProperty('reason')) obj.reason = _ApiClient.ApiClient.convertToType(data['reason'], 'String');
         if (data.hasOwnProperty('phone_number')) obj.phoneNumber = _ApiClient.ApiClient.convertToType(data['phone_number'], 'String');
-        if (data.hasOwnProperty('push_token')) obj.pushToken = _ApiClient.ApiClient.convertToType(data['push_token'], 'String');
+        if (data.hasOwnProperty('phone_reason')) obj.phoneReason = _ApiClient.ApiClient.convertToType(data['phone_reason'], 'String');
       }
 
       return obj;
@@ -66,12 +67,17 @@ InlineResponse2008Records.prototype.id = undefined;
 
 InlineResponse2008Records.prototype.email = undefined;
 /**
+ * @member {String} reason
+ */
+
+InlineResponse2008Records.prototype.reason = undefined;
+/**
  * @member {String} phoneNumber
  */
 
 InlineResponse2008Records.prototype.phoneNumber = undefined;
 /**
- * @member {String} pushToken
+ * @member {String} phoneReason
  */
 
-InlineResponse2008Records.prototype.pushToken = undefined;
+InlineResponse2008Records.prototype.phoneReason = undefined;

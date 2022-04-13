@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The MetricExportResults model module.
  * @module model/MetricExportResults
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var MetricExportResults = /*#__PURE__*/function () {
   /**

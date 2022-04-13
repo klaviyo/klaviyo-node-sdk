@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The PeopleExchangeBody model module.
  * @module model/PeopleExchangeBody
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var PeopleExchangeBody = /*#__PURE__*/function () {
   /**
