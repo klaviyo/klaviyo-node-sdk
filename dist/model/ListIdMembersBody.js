@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListIdMembersBody model module.
  * @module model/ListIdMembersBody
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var ListIdMembersBody = /*#__PURE__*/function () {
   /**

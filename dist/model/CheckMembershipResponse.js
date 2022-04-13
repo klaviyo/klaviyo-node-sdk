@@ -40,7 +40,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 /**
  * The CheckMembershipResponse model module.
  * @module model/CheckMembershipResponse
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var CheckMembershipResponse = /*#__PURE__*/function (_Array) {
   _inherits(CheckMembershipResponse, _Array);

@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The RenderedtemplateData model module.
  * @module model/RenderedtemplateData
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var RenderedtemplateData = /*#__PURE__*/function () {
   /**

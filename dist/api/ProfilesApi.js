@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Profiles service.
 * @module api/ProfilesApi
-* @version 2022.03.29
+* @version 2021.11.26
 */
 var ProfilesApi = /*#__PURE__*/function () {
   /**
@@ -42,7 +42,7 @@ var ProfilesApi = /*#__PURE__*/function () {
   }
   /**
    * Exchange ID for Profile ID
-   * Klaviyo&#x27;s web tracking uses an encrypted identifier. However, there are many use cases that require developers to have access to a given profile&#x27;s email or phone number. In such cases, developers can use this operation to exchange an encrypted identifier for a profile ID, which they can then use to retrieve the full profile data (by making a subsequent request to the &#x60;get-profiles&#x60; operation).  The &#x60;exchange_id&#x60; takes the following form:  &#x60;&lt;IDENTIFIER&gt;.&lt;COMPANY_ID&gt;&#x60;  The &#x60;exchange_id&#x60; appears in the url as follows:  &#x60;?_kx&#x3D;&lt;IDENTIFIER&gt;.&lt;COMPANY_ID&gt;&#x60;
+   * Swap Exchange ID / KX Token for Profile ID
    * @param {Object} opts Optional parameters
    * @param {module:model/PeopleExchangeBody} opts.body 
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2001}

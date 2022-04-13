@@ -13,7 +13,7 @@ var _InlineResponse = require("../model/InlineResponse20010.js");
 
 var _InlineResponse2 = require("../model/InlineResponse20011.js");
 
-var _InlineResponse3 = require("../model/InlineResponse2009.js");
+var _InlineResponse3 = require("../model/InlineResponse20012.js");
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Campaigns service.
 * @module api/CampaignsApi
-* @version 2022.03.29
+* @version 2021.11.26
 */
 var CampaignsApi = /*#__PURE__*/function () {
   /**
@@ -187,7 +187,7 @@ var CampaignsApi = /*#__PURE__*/function () {
      * @param {Number} opts.count For pagination, the number of results to return. Max &#x3D; 25,000 (default to <.>)
      * @param {String} opts.sort Sort order to apply to results, either ascending or descending. Valid values are &#x60;asc&#x60; or &#x60;desc&#x60;. Defaults to &#x60;asc&#x60;. (default to <.>)
      * @param {String} opts.offset For pagination, if a response to this endpoint includes a &#x60;next_offset&#x60;, use that value to get the next page of recipients.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20011}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20012}
      */
 
   }, {
@@ -213,7 +213,7 @@ var CampaignsApi = /*#__PURE__*/function () {
       var authNames = ['ApiKeyAuth'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _InlineResponse2.InlineResponse20011;
+      var returnType = _InlineResponse3.InlineResponse20012;
       return _ApiClient.ApiClient.instance.callApi('/v1/campaign/{campaign_id}/recipients', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType).then(function (response_and_data) {
         return response_and_data.data;
       });
@@ -224,7 +224,7 @@ var CampaignsApi = /*#__PURE__*/function () {
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page For pagination, which page of results to return. Default &#x3D; 0 (default to <.>)
      * @param {Number} opts.count For pagination, the number of results to return. Max &#x3D; 100 (default to <.>)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2009}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20010}
      */
 
   }, {
@@ -242,7 +242,7 @@ var CampaignsApi = /*#__PURE__*/function () {
       var authNames = ['ApiKeyAuth'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _InlineResponse3.InlineResponse2009;
+      var returnType = _InlineResponse.InlineResponse20010;
       return _ApiClient.ApiClient.instance.callApi('/v1/campaigns', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType).then(function (response_and_data) {
         return response_and_data.data;
       });
@@ -253,7 +253,7 @@ var CampaignsApi = /*#__PURE__*/function () {
      * @param {<&vendorExtensions.x-jsdoc-type>} campaignId 
      * @param {Object} opts Optional parameters
      * @param {String} opts.sendTime 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20010}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20011}
      */
 
   }, {
@@ -277,7 +277,7 @@ var CampaignsApi = /*#__PURE__*/function () {
       var authNames = ['ApiKeyAuth'];
       var contentTypes = ['application/x-www-form-urlencoded'];
       var accepts = ['application/json'];
-      var returnType = _InlineResponse.InlineResponse20010;
+      var returnType = _InlineResponse2.InlineResponse20011;
       return _ApiClient.ApiClient.instance.callApi('/v1/campaign/{campaign_id}/schedule', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType).then(function (response_and_data) {
         return response_and_data.data;
       });
@@ -286,7 +286,7 @@ var CampaignsApi = /*#__PURE__*/function () {
      * Send a Campaign Immediately
      * Queues a campaign for immediate delivery
      * @param {<&vendorExtensions.x-jsdoc-type>} campaignId 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20010}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20011}
      */
 
   }, {
@@ -307,7 +307,7 @@ var CampaignsApi = /*#__PURE__*/function () {
       var authNames = ['ApiKeyAuth'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _InlineResponse.InlineResponse20010;
+      var returnType = _InlineResponse2.InlineResponse20011;
       return _ApiClient.ApiClient.instance.callApi('/v1/campaign/{campaign_id}/send', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType).then(function (response_and_data) {
         return response_and_data.data;
       });

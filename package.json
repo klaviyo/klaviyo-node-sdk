@@ -1,6 +1,6 @@
 {
   "name": "klaviyo-sdk",
-  "version": "20220330.0.0",
+  "version": "1.0.1",
   "description": "Empowering_creators_to_own_their_destiny",
   "license": "MIT",
   "type": "module",
@@ -18,10 +18,6 @@
   },
   "browser": {
     "fs": false
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/klaviyo/klaviyo-node-sdk"
   },
   "dependencies": {
     "@babel/cli": "^7.16.8",

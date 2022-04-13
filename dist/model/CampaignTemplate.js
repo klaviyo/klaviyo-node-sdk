@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CampaignTemplate model module.
  * @module model/CampaignTemplate
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var CampaignTemplate = /*#__PURE__*/function () {
   /**

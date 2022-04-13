@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The OneOftrackPayloadPropertiesYOURCUSTOMFIELD model module.
  * @module model/OneOftrackPayloadPropertiesYOURCUSTOMFIELD
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var OneOftrackPayloadPropertiesYOURCUSTOMFIELD = /*#__PURE__*/function () {
   /**

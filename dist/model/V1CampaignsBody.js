@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The V1CampaignsBody model module.
  * @module model/V1CampaignsBody
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var V1CampaignsBody = /*#__PURE__*/function () {
   /**
@@ -94,10 +94,9 @@ V1CampaignsBody.prototype.fromEmail = 'george.washington@klaviyo.com';
 /**
  * The name or label associated with the email address you're sending from.
  * @member {String} fromName
- * @default 'George Washington'
  */
 
-V1CampaignsBody.prototype.fromName = 'George Washington';
+V1CampaignsBody.prototype.fromName = undefined;
 /**
  * The email subject of the campaign
  * @member {String} subject

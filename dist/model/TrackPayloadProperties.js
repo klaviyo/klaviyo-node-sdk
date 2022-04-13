@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TrackPayloadProperties model module.
  * @module model/TrackPayloadProperties
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var TrackPayloadProperties = /*#__PURE__*/function () {
   /**

@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * TrackIdentify service.
 * @module api/TrackIdentifyApi
-* @version 2022.03.29
+* @version 2021.11.26
 */
 var TrackIdentifyApi = /*#__PURE__*/function () {
   /**
@@ -33,7 +33,7 @@ var TrackIdentifyApi = /*#__PURE__*/function () {
     this.apiClient = apiClient || _ApiClient.ApiClient.instance;
   }
   /**
-   * Identify Profile (Legacy)
+   * Identify Profile
    * This endpoint is also used to identify a profile and update its properties without an associated event. It takes as input the same payload as the above POST request, but as a base64-encoded string passed as a query parameter. NOTE: This is offered for backwards compatibility; we recommend all new implementations use the POST approach above.    **EXAMPLE:**      &#x60;&#x60;&#x60;   {       \&quot;token\&quot;: \&quot;PUBLIC_KEY\&quot;,       \&quot;properties\&quot;: {         \&quot;$email\&quot;: \&quot;abraham.lincoln@klaviyo.com\&quot;,         \&quot;$first_name\&quot;: \&quot;Abraham\&quot;,         \&quot;$last_name\&quot;: \&quot;Lincoln\&quot;,         \&quot;$city\&quot;: \&quot;Springfield\&quot;,         \&quot;$region\&quot;: \&quot;Illinois\&quot;       }   }   &#x60;&#x60;&#x60;   Gets encoded into the following string, which is passed into the &#x60;data&#x60; parameter:    &#x60;eyJ0b2tlbiI6ICJQVUJMSUNfS0VZIiwicHJvcGVydGllcyI6IHsiJGVtYWlsIjogImFicmFoYW0ubGluY29sbkBrbGF2aXlvLmNvbSIsIiRmaXJzdF9uYW1lIjogIkFicmFoYW0iLCIkbGFzdF9uYW1lIjogIkxpbmNvbG4iLCIkY2l0eSI6ICJTcHJpbmdmaWVsZCIsIiRyZWdpb24iOiAiSWxsaW5vaXMifX0K&#x60;     
    * @param {<&vendorExtensions.x-jsdoc-type>} data String representation of base64 encoded JSON object
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link 'String'}
@@ -91,7 +91,7 @@ var TrackIdentifyApi = /*#__PURE__*/function () {
       });
     }
     /**
-     * Track Profile Activity (Legacy)
+     * Track Profile Activity
      * This endpoint is also used to track a profile&#x27;s activity. It takes as input the same payload as the above POST request, but as a base64-encoded string passed as a query parameter. NOTE: This is offered for backwards compatibility; we recommend all new implementations use the POST approach above.      **EXAMPLE:**      &#x60;&#x60;&#x60;   {     \&quot;token\&quot;: \&quot;PUBLIC_KEY\&quot;,     \&quot;event\&quot;: \&quot;Ordered Product\&quot;,     \&quot;customer_properties\&quot;: {       \&quot;$email\&quot;: \&quot;abraham.lincoln@klaviyo.com\&quot;     },     \&quot;properties\&quot;: {       \&quot;item_name\&quot;: \&quot;Boots\&quot;,       \&quot;$value\&quot;: 100     }   }    &#x60;&#x60;&#x60;   Gets encoded into the following string, which is passed into the &#x60;data&#x60; parameter:    &#x60;eyJ0b2tlbiI6ICJQVUJMSUNfS0VZIiwiZXZlbnQiOiAiT3JkZXJlZEl0ZW0iLCJjdXN0b21lcl9wcm9wZXJ0aWVzIjogeyIkZW1haWwiOiAiYWJyYWhhbS5saW5jb2xuQGtsYXZpeW8uY29tIn0sInByb3BlcnRpZXMiOiB7Iml0ZW1fbmFtZSI6ICJCb290cyIsIiR2YWx1ZSI6IDEwMH19&#x60; 
      * @param {<&vendorExtensions.x-jsdoc-type>} data String representation of base64 encoded JSON object
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link 'String'}

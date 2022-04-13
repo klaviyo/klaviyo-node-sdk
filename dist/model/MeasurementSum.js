@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The MeasurementSum model module.
  * @module model/MeasurementSum
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var MeasurementSum = /*#__PURE__*/function () {
   /**

@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ReasonInvalidEmail model module.
  * @module model/ReasonInvalidEmail
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var ReasonInvalidEmail = /*#__PURE__*/function () {
   /**

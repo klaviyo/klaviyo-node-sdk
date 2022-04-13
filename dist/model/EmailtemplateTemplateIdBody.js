@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EmailtemplateTemplateIdBody model module.
  * @module model/EmailtemplateTemplateIdBody
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var EmailtemplateTemplateIdBody = /*#__PURE__*/function () {
   /**

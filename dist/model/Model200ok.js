@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The Model200ok model module.
  * @module model/Model200ok
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var Model200ok = /*#__PURE__*/function () {
   /**
@@ -48,6 +48,7 @@ var Model200ok = /*#__PURE__*/function () {
   }]);
 
   return Model200ok;
-}();
+}(); // Implement OneOfinlineResponse2006 interface:
+
 
 exports.Model200ok = Model200ok;

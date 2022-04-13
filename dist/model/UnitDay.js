@@ -16,7 +16,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The UnitDay model module.
  * @module model/UnitDay
- * @version 2022.03.29
+ * @version 2021.11.26
  */
 var UnitDay = /*#__PURE__*/function () {
   /**
