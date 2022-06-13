@@ -513,38 +513,78 @@ Templates.updateTemplate(templateId, opts)
 
 ## TrackIdentifyApi
 
+These are a little unique because the actual payload outlined in our docs below are supposed to be send as a string. Secondly, the two get endpoint need to have their data base64 encoded this might look slightly different depending on what environement you are using the SDK in
 
 #### [Identify Profile](https://developers.klaviyo.com/en/reference/identify-get)
+This endpoint requires base 64 encoding of the paramater
 
 ```JavaScript
-TrackIdentify.identifyGet(data)
+const identifyPayload = {
+    token: "WRITE_TOKEN",
+    properties: {
+      $email: "USER_EMAUL",
+      property:"PROPERTY_INFO_HERE"
+    }
+}
+const encodedPayload = Buffer.from(JSON.stringify(identifyPayload), 'utf8').toString('base64')
+TrackIdentify.identifyGet(encodedPayload)
 ```
 
 
 
 
 #### [Identify Profile](https://developers.klaviyo.com/en/reference/identify-post)
-
+This requires the data payload to be sent as a string, luckly this is easy by converting your js object to a string with JSON.stringify
 ```JavaScript
-TrackIdentify.identifyPost(opts)
+const identifyPayload = {
+    token: "WRITE_TOKEN",
+    properties: {
+      $email: "USER_EMAUL",
+      property:"PROPERTY_INFO_HERE"
+    }
+}
+TrackIdentify.identifyPost({data: JSON.stringify(identifyPayload)})
 ```
 
 
 
 
 #### [Track Profile Activity](https://developers.klaviyo.com/en/reference/track-get)
+This endpoint requires base 64 encoding of the paramater
 
 ```JavaScript
-TrackIdentify.trackGet(data)
+const trackPayload = {
+  token: WRITE_TOKEN,
+  event: "TestEvent",
+  customer_properties: {
+    $email: USER_EMAIL
+  },
+  properties: {
+    EXAMPLE_PROPERTY, PROPERTY_VALUE,
+  }
+}
+encodedPayload = Buffer.from(JSON.stringify(trackPayload), 'utf8').toString('base64')
+TrackIdentify.trackGet(encodedPayload)
 ```
 
 
 
 
 #### [Track Profile Activity](https://developers.klaviyo.com/en/reference/track-post)
+This requires the data payload to be sent as a string, luckly this is easy by converting your js object to a string with JSON.stringify
 
 ```JavaScript
-TrackIdentify.trackPost(opts)
+const trackPayload = {
+  token: WRITE_TOKEN,
+  event: "TestEvent",
+  customer_properties: {
+    $email: USER_EMAIL
+  },
+  properties: {
+    EXAMPLE_PROPERTY, PROPERTY_VALUE,
+  }
+}
+TrackIdentify.trackPost({data: JSON.stringify(trackPayload)})
 ```
 
 
