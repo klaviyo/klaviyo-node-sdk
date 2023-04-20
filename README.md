@@ -1,14 +1,28 @@
-# Klaviyo Node SDK (Legacy)
+# Klaviyo Node SDK (Legacy) - Retired
 
-## Legacy Notice
+## Deprecation Notice
 
-NOTE: we have a NEW Node SDK to go along with our [new API](https://developers.klaviyo.com/en/reference/api_overview).
+This SDK and its associated [NPM Package](https://www.npmjs.com/package/klaviyo-sdk) is deprecated and set to be retired on 2024-01-01
+and will not receive further updates. Use our latest Klaviyo Node SDK to take advantage of our new APIs and to continue to receive SDK updates. You can find out latest Klaviyo Node SDK linked [here](https://github.com/klaviyo/klaviyo-api-node).
 
-We recommend migrating over to our [newest SDK](https://github.com/klaviyo/klaviyo-api-node).
+If you need help migrating, please follow the instructions below and read our [Migrating from V1/V2 to the new Klaviyo APIs](https://developers.klaviyo.com/en/docs/migrating-from-v1v2-to-the-new-klaviyo-apis) and [Comparison between v1/v2 and new APIs](https://developers.klaviyo.com/en/docs/apis_comparison_chart).
 
-You can read more about our SDK release history and support [here](https://developers.klaviyo.com/en/docs/sdk_overview)
+## Migration Instructions
 
-For a comparison between our old and new APIs, check out [this guide](https://developers.klaviyo.com/en/docs/apis_comparison_chart).
+NOTE: this change is not backwards compatible; migrating to the new SDK requires completing the following steps:
+
+### Install New SDK
+
+`npm install klaviyo-api`
+
+### Update Client Instantiation
+ 
+The new library contains code for require and ES modules see how to import the new package according to your project in the [readme](https://github.com/klaviyo/klaviyo-api-node#usage-example)
+
+### Updating API Operations
+
+The new SDK has many name changes to both namespace and parameters (types+format). Please reference [this section](https://github.com/klaviyo/klaviyo-api-node#comprehensive-list-of-operations--parameters) for a comprehensive list of examples.
+
 
 ## Version
 
